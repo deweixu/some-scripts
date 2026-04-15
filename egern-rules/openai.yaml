@@ -23,6 +23,9 @@ rules:
 - domain_keyword:
       match: chatgpt
       policy: Proxy
+- domain_keyword:
+      match: codex
+      policy: Proxy
 - geoip:
     match: CN
     policy: DIRECT
