@@ -1,0 +1,33 @@
+rules:
+- ip_cidr:
+    match: 192.168.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 10.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 127.0.0.0/8
+    policy: DIRECT
+- ip_cidr:
+    match: 172.16.0.0/12
+    policy: DIRECT
+- ip_cidr:
+    match: 192.128.0.0/16
+    policy: DIRECT
+- ip_cidr:
+    match: 224.0.0.0/24
+    policy: DIRECT
+- domain_keyword:
+      match: openai
+      policy: Proxy
+- domain_keyword:
+      match: chatgpt
+      policy: Proxy
+- geoip:
+    match: CN
+    policy: DIRECT
+- geoip:
+    match: HK
+    policy: DIRECT
+- default:
+    policy: DIRECT
