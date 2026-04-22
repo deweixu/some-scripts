@@ -26,6 +26,9 @@ rules:
 - domain_keyword:
       match: codex
       policy: Proxy
+- domain:
+    match: api.jetbrains.ai
+    policy: Proxy
 - geoip:
     match: CN
     policy: DIRECT
