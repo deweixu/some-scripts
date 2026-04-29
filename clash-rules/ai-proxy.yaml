@@ -1,0 +1,9 @@
+rules:
+  - DOMAIN-KEYWORD,codex,PROXY
+  - DOMAIN-KEYWORD,chatgpt,PROXY
+  - DOMAIN-KEYWORD,openai,PROXY
+  - DOMAIN,api.jetbrains.ai,PROXY
+  - DOMAIN-KEYWORD,jetbrains,PROXY
+  - DST-PORT,22,DIRECT
+  - GEOIP,CN,DIRECT
+  - GEOIP,HK,DIRECT
