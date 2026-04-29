@@ -1,16 +1,13 @@
-
 proxy-groups:
-  - name: MY_PROXY
+  - name: PROXY
     type: select
-    proxies:
-      - '🚀 节点选择'
+    proxies: []
 
 rules:
-  - DOMAIN-KEYWORD,codex,MY_PROXY
-  - DOMAIN-KEYWORD,chatgpt,MY_PROXY
-  - DOMAIN-KEYWORD,openai,MY_PROXY
-  - DOMAIN,api.jetbrains.ai,MY_PROXY
-  - DOMAIN-KEYWORD,jetbrains,MY_PROXY
-  - DST-PORT,22,DIRECT
+  - DOMAIN-KEYWORD,openai,PROXY
+  - DOMAIN-KEYWORD,chatgpt,PROXY
+  - DOMAIN-KEYWORD,codex,PROXY
+  - DOMAIN,api.jetbrains.ai,PROXY
+  - DOMAIN-KEYWORD,jetbrains,PROXY
   - GEOIP,CN,DIRECT
-  - GEOIP,HK,DIRECT
+  - MATCH,PROXY
