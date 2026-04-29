@@ -1,9 +1,8 @@
-
 rules:
-  - DOMAIN-KEYWORD,openai,🚀 节点选择
-  - DOMAIN-KEYWORD,chatgpt,🚀 节点选择
-  - DOMAIN-KEYWORD,codex,🚀 节点选择
-  - DOMAIN,api.jetbrains.ai,🚀 节点选择
-  - DOMAIN-KEYWORD,jetbrains,🚀 节点选择
+  - DOMAIN-KEYWORD,openai,"🚀 节点选择"
+  - DOMAIN-KEYWORD,chatgpt,"🚀 节点选择"
+  - DOMAIN-KEYWORD,codex,"🚀 节点选择"
+  - DOMAIN,api.jetbrains.ai,"🚀 节点选择"
+  - DOMAIN-KEYWORD,jetbrains,"🚀 节点选择"
   - GEOIP,CN,DIRECT
   - MATCH,DIRECT
