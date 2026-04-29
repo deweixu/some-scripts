@@ -1,7 +1,8 @@
 proxy-groups:
   - name: PROXY
     type: select
-    proxies: []
+    use:
+      - "*"
 
 rules:
   - DOMAIN-KEYWORD,openai,PROXY
