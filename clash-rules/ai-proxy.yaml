@@ -4,10 +4,14 @@ proxy-groups:
     include-all: true
 
 rules:
+  - DOMAIN-SUFFIX,openai.com,hand-proxy
+  - DOMAIN-SUFFIX,chatgpt.com,hand-proxy
   - DOMAIN-KEYWORD,openai,hand-proxy
   - DOMAIN-KEYWORD,chatgpt,hand-proxy
   - DOMAIN-KEYWORD,codex,hand-proxy
   - DOMAIN,api.jetbrains.ai,hand-proxy
+  - DOMAIN-SUFFIX,jetbrains.com,hand-proxy
+  - DOMAIN-SUFFIX,jetbrains.ai,hand-proxy
   - DOMAIN-KEYWORD,jetbrains,hand-proxy
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,DIRECT
