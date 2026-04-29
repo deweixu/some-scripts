@@ -2,8 +2,10 @@
 proxy-groups:
   - name: MY_PROXY
     type: select
-    use:
-      - default
+    proxies:
+      - 'Proxy'
+      - 'Default Proxy'
+      - '🚀 节点选择'
 
 rules:
   - DOMAIN-KEYWORD,codex,MY_PROXY
