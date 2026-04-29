@@ -1,5 +1,7 @@
+
 proxy-groups:
   - {name: "hand-proxy", type: select, include-all: true}
+
 
 rules:
   - DOMAIN-KEYWORD,openai,"hand-proxy"
