@@ -3,8 +3,6 @@ proxy-groups:
   - name: MY_PROXY
     type: select
     proxies:
-      - 'Proxy'
-      - 'Default Proxy'
       - '🚀 节点选择'
 
 rules:
