@@ -1,14 +1,9 @@
-proxy-groups:
-  - name: PROXY
-    type: select
-    use:
-      - "*"
 
 rules:
-  - DOMAIN-KEYWORD,openai,PROXY
-  - DOMAIN-KEYWORD,chatgpt,PROXY
-  - DOMAIN-KEYWORD,codex,PROXY
-  - DOMAIN,api.jetbrains.ai,PROXY
-  - DOMAIN-KEYWORD,jetbrains,PROXY
+  - DOMAIN-KEYWORD,openai,'🚀 节点选择'
+  - DOMAIN-KEYWORD,chatgpt,'🚀 节点选择'
+  - DOMAIN-KEYWORD,codex,'🚀 节点选择'
+  - DOMAIN,api.jetbrains.ai,'🚀 节点选择'
+  - DOMAIN-KEYWORD,jetbrains,'🚀 节点选择'
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,DIRECT
