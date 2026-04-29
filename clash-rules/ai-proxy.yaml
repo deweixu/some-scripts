@@ -4,6 +4,8 @@ proxy-groups:
     include-all: true
 
 rules:
+  # 1. 强制禁止 QUIC，让它走 TCP 从而触发域名匹配
+  - AND,((protocol,udp),(dst_port,443)),REJECT
   - DOMAIN-KEYWORD,openai,hand-proxy
   - DOMAIN-KEYWORD,chatgpt,hand-proxy
   - DOMAIN-KEYWORD,codex,hand-proxy
