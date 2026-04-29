@@ -1,9 +1,16 @@
+
+proxy-groups:
+  - name: MY_PROXY
+    type: select
+    use:
+      - default
+
 rules:
-  - DOMAIN-KEYWORD,codex,PROXY
-  - DOMAIN-KEYWORD,chatgpt,PROXY
-  - DOMAIN-KEYWORD,openai,PROXY
-  - DOMAIN,api.jetbrains.ai,PROXY
-  - DOMAIN-KEYWORD,jetbrains,PROXY
+  - DOMAIN-KEYWORD,codex,MY_PROXY
+  - DOMAIN-KEYWORD,chatgpt,MY_PROXY
+  - DOMAIN-KEYWORD,openai,MY_PROXY
+  - DOMAIN,api.jetbrains.ai,MY_PROXY
+  - DOMAIN-KEYWORD,jetbrains,MY_PROXY
   - DST-PORT,22,DIRECT
   - GEOIP,CN,DIRECT
   - GEOIP,HK,DIRECT
