@@ -9,5 +9,5 @@ rules:
   - DOMAIN-KEYWORD,codex,hand-proxy
   - DOMAIN,api.jetbrains.ai,hand-proxy
   - DOMAIN-KEYWORD,jetbrains,hand-proxy
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,DIRECT
