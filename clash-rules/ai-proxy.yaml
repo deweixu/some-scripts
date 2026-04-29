@@ -2,8 +2,6 @@ proxy-groups:
   - name: hand-proxy
     type: select
     include-all: true
-    proxies:
-      - DIRECT
 
 rules:
   - DOMAIN-KEYWORD,openai,hand-proxy
