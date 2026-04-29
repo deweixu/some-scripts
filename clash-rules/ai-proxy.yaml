@@ -1,8 +1,11 @@
+proxy-groups:
+  - {name: "hand-proxy", type: select, include-all: true}
+
 rules:
-  - DOMAIN-KEYWORD,openai,"🚀 节点选择"
-  - DOMAIN-KEYWORD,chatgpt,"🚀 节点选择"
-  - DOMAIN-KEYWORD,codex,"🚀 节点选择"
-  - DOMAIN,api.jetbrains.ai,"🚀 节点选择"
-  - DOMAIN-KEYWORD,jetbrains,"🚀 节点选择"
+  - DOMAIN-KEYWORD,openai,"hand-proxy"
+  - DOMAIN-KEYWORD,chatgpt,"hand-proxy"
+  - DOMAIN-KEYWORD,codex,"hand-proxy"
+  - DOMAIN,api.jetbrains.ai,"hand-proxy"
+  - DOMAIN-KEYWORD,jetbrains,"hand-proxy"
   - GEOIP,CN,DIRECT
   - MATCH,DIRECT
